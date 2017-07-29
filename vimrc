@@ -12,6 +12,14 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 
+" Basic Set up:
+set nocompatible
+filetype plugin on
+
+" Finding files
+set path+=**
+set wildmenu
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
