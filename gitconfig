@@ -25,3 +25,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	name = nikhilkesari
+	email = nikhil.kesari@bigbasket.com

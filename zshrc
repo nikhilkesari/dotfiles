@@ -84,3 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source ~/.aliases
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/bigbasket
+source /usr/local/bin/virtualenvwrapper.sh
