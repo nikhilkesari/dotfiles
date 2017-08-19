@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="af-magic"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python)
+plugins=(git jira pylint python pyenv pip pep8 npm node mvn django bower compleat)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +87,4 @@ source ~/.aliases
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/bigbasket
 source /usr/local/bin/virtualenvwrapper.sh
+export JIRA_URL="https://bigbasket.atlassian.net"
