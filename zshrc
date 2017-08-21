@@ -53,6 +53,16 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git jira pylint python pyenv pip pep8 npm node mvn django bower compleat)
 
+
+# User configuration
+# # Always work in a tmux session if tmux is installed
+# # https://github.com/chrishunt/dot-files/blob/master/.zshrc
+#if which tmux 2>&1 >/dev/null; then
+#    if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
+#          tmux attach -t hack || tmux new -s hack; exit
+#    fi
+#fi
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -88,3 +98,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/bigbasket
 source /usr/local/bin/virtualenvwrapper.sh
 export JIRA_URL="https://bigbasket.atlassian.net"
+# redefine prompt_context for hiding user@hostname
+prompt_context () { }
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
