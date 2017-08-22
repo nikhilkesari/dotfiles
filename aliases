@@ -26,4 +26,6 @@ alias tks="tmux kill-session -t"
 
 #VirtaulWrapper mostly for bigbasket
 alias wbb="workon bigbasket"
-alias jump="sudo openvpn --config ~/nikhil.kesari.ovpn"
+alias nvpn="sudo openvpn --config ~/nikhil.kesari.ovpn"
+alias jb="ssh nikhil@52.66.159.28"
+alias jbc="sudo ip route del 0.0.0.0/1"
