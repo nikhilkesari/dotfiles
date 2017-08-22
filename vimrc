@@ -26,6 +26,12 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'scrooloose/nerdtree'
+Plugin 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -208,3 +214,9 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Airline
+set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular:13
+let g:airline_powerline_fonts = 1
