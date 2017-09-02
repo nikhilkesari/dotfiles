@@ -32,6 +32,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'altercation/vim-colors-solarized'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -220,3 +221,7 @@ map <C-n> :NERDTreeToggle<CR>
 " Airline
 set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular:13
 let g:airline_powerline_fonts = 1
+
+syntax enable
+
+
