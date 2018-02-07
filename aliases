@@ -25,9 +25,9 @@ alias tns="tmux new-session -s"
 alias tks="tmux kill-session -t"
 
 #VirtaulWrapper mostly for bigbasket
-alias wbb="workon bigbasket"
+alias cdbb="workon bigbasket"
 alias nvpn="sudo openvpn --config ~/nikhil.kesari.ovpn"
-alias jb="ssh nikhil@52.66.159.28"
+alias jb="ssh nikhil.kesari@172.16.24.32"
 alias jbc="sudo ip route del 0.0.0.0/1"
 alias zookeeper_start="~/kafka_2.11-0.10.1.0/bin/zookeeper-server-start.sh ~/kafka_2.11-0.10.1.0/config/zookeeper.properties"
 alias kafka_start="~/kafka_2.11-0.10.1.0/bin/kafka-server-start.sh ~/kafka_2.11-0.10.1.0/config/server.properties"
